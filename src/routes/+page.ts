@@ -7,6 +7,7 @@ export const load: PageLoad = async ({ parent, data, params }) => {
 
   return {
     name: 'from /page.ts',
+    track: data.track++,
     parent_data,
     data
   }

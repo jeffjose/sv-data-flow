@@ -6,6 +6,7 @@ export const load: LayoutLoad = async ({ parent, data, params }) => {
 
   return {
     name: 'from /layout.ts',
+    track: data.track++,
     parent_data,
     data
   }
