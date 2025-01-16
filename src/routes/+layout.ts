@@ -2,13 +2,11 @@ import type { LayoutLoad } from './$types';
 
 export const load: LayoutLoad = async ({ parent, data, params }) => {
 
-  await parent()
-
-  let { name } = data;
-
+  const parent_data = await parent()
 
   return {
     name: 'from /layout.ts',
-    parent_data: name,
+    parent_data,
+    data
   }
 };
