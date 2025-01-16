@@ -2,5 +2,5 @@
 	import Page from '$lib/components/page.svelte';
 </script>
 
-<Page name="/page.svelte">
+<Page name="/one/two/page.svelte">
 </Page>
